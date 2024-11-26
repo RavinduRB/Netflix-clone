@@ -1,0 +1,169 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo, a stylized red 'N' on a black background" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/7OKtQC4TrpYODFLJX4Kk9wSKVBanCkQU7A2sAbdXBRKKLJ9E.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Home
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white">
+    </i>
+    <i class="fas fa-bell text-white">
+    </i>
+    <img alt="User profile picture, a generic user icon" class="h-8 w-8 rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/SAzULpBY0m7HIlRMUlBBzflwPimKSFNqUliE2i99eImmsk0TA.jpg" width="30"/>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080');">
+   <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+   </div>
+   <div class="absolute bottom-24 left-8 md:left-16">
+    <h1 class="text-4xl md:text-6xl font-bold">
+     Featured Movie Title
+    </h1>
+    <p class="mt-4 max-w-md">
+     A brief description of the featured movie, highlighting its main plot points and why it's a must-watch.
+    </p>
+    <div class="mt-4">
+     <button class="bg-white text-black px-4 py-2 rounded-md font-bold flex items-center space-x-2">
+      <i class="fas fa-play">
+      </i>
+      <span>
+       Play
+      </span>
+     </button>
+     <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded-md font-bold flex items-center space-x-2 ml-2">
+      <i class="fas fa-info-circle">
+      </i>
+      <span>
+       More Info
+      </span>
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Content Section -->
+  <section class="mt-8 px-4 md:px-16">
+   <!-- Row 1 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie poster 1, a dramatic scene with main characters" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/ktyj2bMiNOq1IlP7So6UYLvymvSlnaiGDeB4uDguUc7PWS6JA.jpg" width="300"/>
+     <img alt="Movie poster 2, an action-packed scene with explosions" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/CQqMSMnQucK1ItQiLmh8YsQhme9UwyxCewfqKcT5neCEzSSPB.jpg" width="300"/>
+     <img alt="Movie poster 3, a romantic scene with the lead couple" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/3lIDMTtzHkrgAlEh0BVcfBZeniF4QrvdFt4eUx4W3GGTZJpnA.jpg" width="300"/>
+     <img alt="Movie poster 4, a sci-fi scene with futuristic elements" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/vGWiSzQ03CoPH5hBHLcP4ORNoXfAffzPbj3Qew4UYGM2ySSPB.jpg" width="300"/>
+     <img alt="Movie poster 5, a horror scene with a creepy atmosphere" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/wdWIZfKqEJ3ZJqmNmsj36eDdcqntrN1Ltwx0YxkdlD1gsk0TA.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 2 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Top Picks for You
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie poster 6, a comedy scene with humorous characters" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Z36PV120SyIeQ6hJYLXnuqsdQkWlH3zTiBcmq8twGaMRWS6JA.jpg" width="300"/>
+     <img alt="Movie poster 7, a thriller scene with intense moments" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/uZNCIgBTdDJiKZxf3ZxA5lTcf4Val89uZFL49svGfrq6YJpnA.jpg" width="300"/>
+     <img alt="Movie poster 8, a fantasy scene with magical creatures" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/oVlaWe4b50XFZyimHBYbuzZWeUC9dYvWuxbKLuPfGqoWZJpnA.jpg" width="300"/>
+     <img alt="Movie poster 9, a documentary scene with real-life events" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/e7MYzTzyALRoSCNCBki6jvVfPZI2Henqg1oejgXfcdmfLLJ9E.jpg" width="300"/>
+     <img alt="Movie poster 10, an animated scene with colorful characters" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/38HyCvouyf2sbC3q1jtIEZaoDaWZVamkCXeoAsHnq97lsk0TA.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 3 -->
+   <div class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Recently Added
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie poster 11, a drama scene with emotional moments" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/bcaUFZNeQFXYSabuSWrZ1essEgVhZN8N7sJu96YgofF4YJpnA.jpg" width="300"/>
+     <img alt="Movie poster 12, a mystery scene with suspenseful elements" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/GCAekktSnMzrDS8Gsjx9dUIOxQGG9dFS9RLvibHxswSVWS6JA.jpg" width="300"/>
+     <img alt="Movie poster 13, a biographical scene with historical figures" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/39wndkDZ1fSRN65udQrpZSSfTW2nuGxFtFRh0m8l6Spjsk0TA.jpg" width="300"/>
+     <img alt="Movie poster 14, a musical scene with vibrant performances" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Ed9EGqdx6E4NMFesRiMxOsBpQq13ogQfNsNUmKQsv6Mzsk0TA.jpg" width="300"/>
+     <img alt="Movie poster 15, a sports scene with competitive action" class="w-48 md:w-64 rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/WhtpbtyllEY0D9plpUKyQzABB3eBuMMSwy4aUdOof2jwsk0TA.jpg" width="300"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 p-4 mt-8">
+   <div class="flex justify-center space-x-4">
+    <a class="text-gray-400 hover:text-white" href="#">
+     Audio and Subtitles
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Help Center
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Gift Cards
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Media Center
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Investor Relations
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Jobs
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Terms of Use
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Privacy
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Legal Notices
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Cookie Preferences
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Corporate Information
+    </a>
+    <a class="text-gray-400 hover:text-white" href="#">
+     Contact Us
+    </a>
+   </div>
+   <div class="flex justify-center mt-4">
+    <p class="text-gray-400">
+     © 2023 Netflix Clone
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
+
+add marvel movie picture (1920 x 1080) to the background
